@@ -1,10 +1,22 @@
-# pinky
+# react-pinky-promise
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-Describe pinky here.
+[Demo](http://react-pinky-promise.surge.sh/)
+
+```js
+<Pinky promise={new Promise((resolve, reject) => setTimeout(() => resolve('Yay after 3s'), 3000))}>
+  {({pending, resolved, rejected}) => (
+    <div>
+      {pending && <div>pending</div>}
+      {resolved && <div>resolved: {resolved}</div>}
+      {rejected && <div>rejected: {rejected}</div>}
+    </div>
+  )}
+</Pinky>
+```
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
