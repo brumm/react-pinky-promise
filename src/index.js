@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react'
+import isPromise from 'is-promise'
 
 const noOp = () => null
 const INITIAL_STATE = {
@@ -21,7 +22,7 @@ class Pinky extends React.Component {
 
   constructor(props) {
     super(props)
-    if (props.promise instanceof Promise) {
+    if (isPromise(props.promise)) {
       this.handlePromise(props.promise)
     } else {
       throw new Error(`prop 'promise' must be an instance of Promise`)
