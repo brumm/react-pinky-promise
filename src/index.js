@@ -10,7 +10,6 @@ const INITIAL_STATE = {
 class Pinky extends React.Component {
 
   static propTypes = {
-    promise: React.PropTypes.instanceOf(Promise).isRequired,
     children: React.PropTypes.func
   }
 
