@@ -1,3 +1,5 @@
+
+![](http://i.imgur.com/epeP715.png)
 # react-pinky-promise
 
 [![npm version](https://badge.fury.io/js/react-pinky-promise.svg)](https://badge.fury.io/js/react-pinky-promise)
